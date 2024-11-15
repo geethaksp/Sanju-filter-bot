@@ -13,24 +13,24 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '19863226'))
-API_HASH = environ.get('API_HASH', '8f6bf9eb5bb94dbd2455925eee5b3b84')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6343988375:AAFvZfx1NbTVsoqqb0QUkakACchK-s8HU_M')
+API_ID = int(environ.get('API_ID', '22798329'))
+API_HASH = environ.get('API_HASH', 'd8d9e81351306890251c49f454dfeafb')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7657448903:AAHJKhllLxt8DwJkO6wHPNE-FkoHURwIFto')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7140699364').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/biisal")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002245325869'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
+USERNAME = environ.get('USERNAME', "https://telegram.me/bineesh649")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002347081243'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/cenimahub')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jot:Sidhu@cluster0.qwokssw.mongodb.net/")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://testdb1234:<db_password>@cluster0.b5zft.mongodb.net/")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002195684318'))
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002180562712'))
+QR_CODE = environ.get('QR_CODE', '')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/4dad0cc16f190468454ee.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002248452552'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001905670346'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002386936243'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
@@ -55,11 +55,11 @@ REF_PREMIUM = 30
 PREMIUM_POINT = 1500
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-100'))
-request_channel = environ.get('REQUEST_CHANNEL', '-100')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+request_channel = environ.get('REQUEST_CHANNEL', '')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002203977455'))
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-100'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002497939116'))
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
 
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '5000')
